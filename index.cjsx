@@ -124,6 +124,8 @@ getResult = (sortieHp, enemyHp, combinedHp, leastHp) ->
     result = 'B'
   else if sortieDmg != 0 && (sortieDmg * sortieTot >= 1.0 * enemyDmg * enemyTot)
     result = 'C'
+  console.log enemyDmg, sortieTot, enemyDmg / sortieTot
+  console.log sortieDmg, enemyTot, sortieDmg / enemyTot
   result
 
 checkRepair = (shipId) ->
